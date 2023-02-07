@@ -1,0 +1,435 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.12rem;
+    line-height: 1.5;
+    margin: 8;
+    padding: 8;
+    color: #888;
+    background: #fff;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul li{
+    margin: 1.75rem 0 0;
+}
+a{
+    color: #888;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+a:hover{
+    color: #fff;
+}
+a.active{
+    color: #fff;
+}
+h1, h2, h3, h4{
+    color: #333;
+    font-weight: normal;
+    margin: 1.75rem 0 1rem 0;
+    font-family: 'Prata', serif;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2.125rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+}
+p{
+    color: #505050;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Heebo', sans-serif;
+}
+section{
+    display: block;
+}
+img{
+    width: 100%;
+}
+nav{
+    display: block;
+}
+nav li{
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+/* -----header------ */
+header{
+    height: 900px;
+    background: url(/imgs/beautiful-girl-in-black-hat-2.jpg) rgb(84, 84, 84) no-repeat;
+    background-size: 100% 100%;
+}
+.bg{
+    background: #000;
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 1;
+}
+.bg-content{
+    position: relative;
+    z-index: 12;
+}
+.logo img{
+    width: 78%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu {
+    display: flex;
+    line-height: 30px;
+}
+.main-menu li{
+    width: 128px;
+    transition: 0.5s;
+}
+.main-menu > li > a{
+    font-family: 'Heebo', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+} 
+.menu h1{
+    margin-top: 250px;
+    text-align: center;
+    color: #dddddd;
+    font-size: 64px;
+    font-weight: 400px;
+    line-height: 1.3em;
+    letter-spacing: 2px;
+}
+li:hover a, a:hover, i:hover{
+    color: #fff;
+}
+.button-wr{
+    font-family: 'Heebo', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #715c41;
+    border-radius: 0;
+    padding: 16px 30px;
+    margin-top: 30px;
+}
+#grid{
+    display: grid;
+    justify-items: center;
+}
+/* -------------header end--------------- */
+
+
+
+/* -----------offer-------------- */
+.offer{
+    padding: 80px 0;
+}
+.offer-title{
+    color: #222;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.offer img{
+    width:  60px;
+}
+.offer-title-box h3{
+    color: #252525;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.offer-title-box p{
+    color: #888;
+}
+.button-btn{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+    background: #fff;
+    padding: 0 0 0 1rem;
+}
+.button-btn i{
+    color: #252525;
+}
+.button-btn:hover{
+    color: #222;
+}
+
+
+/* ------------------portfolio------------------ */
+
+#portfolio{
+    background: #fbfbfb;
+    padding: 80px 0;
+    position: relative;
+}
+h2.pas{
+    position: absolute;
+    left: -50px;
+    top: 0px;
+    color: #f2f2f2;
+    font-size: 140px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 0;
+}
+h2.index{
+    position: relative;
+    z-index: 2;
+}
+.gallery-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 250px);
+    grid-gap: 2rem;
+}
+.gallery-content .item{
+    background: #000;
+    position: relative;
+    overflow: hidden;
+}
+.gallery-content .box2{
+    grid-column: 2/3;
+    grid-row: 1/3;    
+}
+.gallery-content .box4{
+    grid-column: 1/2;
+    grid-row: 2/4;    
+}
+.gallery-content .box5{
+    grid-column: 2/3;
+    grid-row: 3/5;    
+}
+.gallery-content .box6{
+    grid-column: 3/4;
+    grid-row: 2/4;    
+}
+.gallery-content .box7{
+    grid-column: 1/2 ;
+    grid-row: 4/6;    
+}
+.gallery-content .box8{
+    grid-column: 3/4 ;
+    grid-row: 4/6;    
+}
+.gallery-content img{
+    height: 100%;
+    width: 100%;
+}
+.hover1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    transition: 0.5s transform;
+}
+.hover1 h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    transition: 0.5s transform;
+    transform: translate(0%, 20px);
+    opacity: 0;
+}
+.hover1 i{
+    background: #715c41;
+    color: #ffff;
+    margin: 0px 0 0 4px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    border-radius: 50%;
+    transition: 0.5s transform;
+    transform: translate(0%, 50px);
+    opacity: 0;
+}
+.item:hover h2, .item:hover i{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.item img{
+    transition: 0.5s ;
+}
+.item:hover img{
+    opacity: 0.3;
+}
+.view{
+    display: grid;
+    justify-items: center;
+    margin-top: 50px;
+}
+.continer{
+    padding: 50px 0 0 0;
+}
+.img-column-wrap img{
+    width: 80%;
+}
+
+.slick-list{
+    box-sizing: inherit;
+    background: #f9f9f9;
+    padding: 50px 0 50px 50px;
+    margin-top: 30px;
+}
+.slick-list > i{
+    color: #d1c8bb;
+    font-size: 48px;
+}
+.slick-list p{
+    font-size: 16px;
+    font-weight: 300;
+    width: 90%;
+    letter-spacing: 1px;
+    margin: 30px 0 20px 0;
+    hyphens: manual;
+    line-height: 1.5;
+}
+.star > i{
+    color: #d1c8bb;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.client-left *{
+    margin: 0;
+}
+.client-left h3{
+    margin-top: 20px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.client-left p{
+    font-size: 14px;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.slick-dots{
+    display: flex;
+}
+.slick-dots span{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 30px 0 0 15px;
+    background: #ededed;
+    border-radius: 50%;
+}
+.slick-dots span:nth-child(2){
+    background: #505050;
+}
+
+
+/* ---------team-------------- */
+
+.team{
+    position: relative;
+    padding: 50px 0;
+    margin-top: -2rem;
+    background-color: #fbfbfb;
+}
+.img-box{
+    width: 100%;
+    filter: contrast(77%) saturate(50%);
+}
+.team .offer-title p{
+    margin-top: 32px;
+}
+.team .portfolio{
+    text-align: center;
+}
+.img-box h2{
+    letter-spacing: 1px;
+}
+
+
+/* -----------footer-------------- */
+#footer{
+    background: #252525;
+    padding: 65px 0 10px 0;
+    color: #b8b8b8;
+}
+.footer-style-one img{
+    width: 35%;
+    margin-top: 15px;
+
+}
+.footer-style-one p{
+    color: #8b8b8b;
+    font-weight: 300;
+    margin: 15px 0;
+}
+.footer-style-one .social-media i{
+    margin: 15px 25px 0 0;
+}
+#footer h2{
+    color: #d1c8bb;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.footer-style-two ul li{
+    margin-top: 10px;
+    color: #8b8b8b;
+    font-weight: 300;
+}
+.footer-style-three ul{
+    margin-top: 20px;
+}
+.footer-style-three li{
+    margin-top: 10px;
+    color: #8b8b8b;
+
+}
+#footer span{
+    margin-left: 10px;
+}
+#footer li a, #footer span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer-style-four .grid > [class="col-"]{
+    padding: 5px 5px 0 0;
+}
+.footer-style-four .grid img{
+    padding: 0px 10px 0px 0 ;
+}
+.img-flex img{
+    width: 100px;
+    margin-left: -15px;
+    margin-top: -10px;
+}
+
+
+
